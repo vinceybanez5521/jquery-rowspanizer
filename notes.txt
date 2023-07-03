@@ -1,0 +1,2 @@
+Source:
+https://www.jqueryscript.net/table/Automatic-Table-Rowspan-Plugin-With-jQuery-rowspanizer-js.html#google_vignette

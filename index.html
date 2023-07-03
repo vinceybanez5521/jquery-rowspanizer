@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <table id="my-table">
+      <tr>
+        <td>F1</td>
+        <td>A1</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>F1</td>
+        <td>A2</td>
+        <td>200</td>
+      </tr>
+      <tr>
+        <td>F1</td>
+        <td>A2</td>
+        <td>300</td>
+      </tr>
+      <tr>
+        <td>F2</td>
+        <td>B1</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>F2</td>
+        <td>B2</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>F2</td>
+        <td>B3</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>F2</td>
+        <td>B4</td>
+        <td>25</td>
+      </tr>
+    </table>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="jquery.rowspanizer.min.js"></script>
+    <script>
+      $("#my-table").rowspanizer();
+
+      $("table").rowspanizer({
+        vertical_align: "middle",
+      });
+
+      $("table").rowspanizer({
+        columns: [0, 1, 2],
+      });
+    </script>
+  </body>
+</html>
